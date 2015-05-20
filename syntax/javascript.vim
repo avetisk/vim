@@ -6,7 +6,7 @@
 syn match AkNote containedin=ALL /\(\/\/\|\/\*\+\|\s*\*\)\s*\zsNOTE\ze/
 highlight def link AkNote Todo
 
-syn match AkJsMethod containedin=ALL /\(^\s\+\)\@<='\?\w\+'\?\( (.*) {\)\@=/
+syn match AkJsMethod containedin=ALL /\(^\s\+\(static \)\?\)\@<='\?\w\+'\?\( (.*) {\)\@=/
 highlight AkJsMethod ctermbg=28 ctermfg=234 cterm=none
 
 syn match AkJsClass containedin=ALL /\(\<class \)\@<=\w\+\( \(extends\|{\)\)\@=/
